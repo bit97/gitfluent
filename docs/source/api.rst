@@ -1,7 +1,7 @@
 API
 ===
 
-.. automodule:: pythontemplate
+.. automodule:: gitflow
    :members:
    :undoc-members:
    :show-inheritance:

@@ -2,7 +2,7 @@ import typer
 from typer import Option
 from typing_extensions import Annotated
 
-import pythontemplate
+import gitflow
 
 app = typer.Typer(no_args_is_help=True, pretty_exceptions_enable=False, add_completion=False)
 # Add functions from other files like:
@@ -12,7 +12,7 @@ app = typer.Typer(no_args_is_help=True, pretty_exceptions_enable=False, add_comp
 def version_callback(value: bool):
     if not value:
         return
-    print(pythontemplate.__version__)
+    print(gitflow.__version__)
     raise typer.Exit()
 
 
@@ -33,4 +33,4 @@ def common(
 
 
 def run_app():
-    app(prog_name="pythontemplate")
+    app(prog_name="gitflow")

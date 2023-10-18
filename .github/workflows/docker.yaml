@@ -29,4 +29,4 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: GIT_USERNAME/GIT_REPONAME:latest
+          tags: bit97/git-feature:latest

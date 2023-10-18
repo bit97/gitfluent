@@ -17,9 +17,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN curl -sSL https://install.python-poetry.org | python3 -
 
-COPY . /pythontemplate
+COPY . /gitflow
 
-WORKDIR /pythontemplate
+WORKDIR /gitflow
 
 RUN poetry install --without=dev,docs \
     && rm -rf .git
@@ -36,5 +36,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-COPY --from=build /pythontemplate /pythontemplate
-WORKDIR /pythontemplate
+COPY --from=build /gitflow /gitflow
+WORKDIR /gitflow

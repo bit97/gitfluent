@@ -4,10 +4,10 @@
 
 .. inclusion-marker-do-not-remove
 
-gitflow
+gitfluent
 ==============
 
-gitflow is a
+gitfluent is a
 
 
 Features
@@ -16,7 +16,7 @@ Features
 Installation
 ============
 
-gitflow requires Python ``>=3.8`` and can be installed via:
+gitfluent requires Python ``>=3.8`` and can be installed via:
 
 .. code-block:: bash
 
@@ -28,7 +28,7 @@ Usage
 
 .. code-block:: python
 
-   import gitflow
+   import gitfluent
 
 
 
@@ -43,5 +43,5 @@ Usage
         :target: https://git-feature.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 .. |Python compat| image:: https://img.shields.io/badge/>=python-3.8-blue.svg
-.. |PyPi| image:: https://img.shields.io/pypi/v/gitflow.svg
-        :target: https://pypi.python.org/pypi/gitflow
+.. |PyPi| image:: https://img.shields.io/pypi/v/gitfluent.svg
+        :target: https://pypi.python.org/pypi/gitfluent

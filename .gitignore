@@ -242,8 +242,8 @@ Temporary Items
 .apdisk
 
 # Cython
-gitflow/_c_extension.c
-gitflow/*.html
+gitfluent/_c_extension.c
+gitfluent/*.html
 
 # Poetry
 poetry.toml

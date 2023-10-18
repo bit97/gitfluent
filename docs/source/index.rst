@@ -1,4 +1,4 @@
-Welcome to gitflow's documentation!
+Welcome to gitfluent's documentation!
 ==========================================
 
 .. include:: ../../README.rst

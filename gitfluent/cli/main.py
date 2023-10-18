@@ -6,7 +6,7 @@ from git import Repo
 from typer import Option
 from typing_extensions import Annotated
 
-import gitflow
+import gitfluent
 
 repo = Repo(Path.cwd(), search_parent_directories=True)
 app = typer.Typer(no_args_is_help=True, pretty_exceptions_enable=False, add_completion=False)
@@ -15,7 +15,7 @@ app = typer.Typer(no_args_is_help=True, pretty_exceptions_enable=False, add_comp
 def version_callback(value: bool):
     if not value:
         return
-    print(gitflow.__version__)
+    print(gitfluent.__version__)
     raise typer.Exit()
 
 
@@ -56,6 +56,7 @@ def bug(
 ):
     branch = f"bugfix/{id}/{name.replace(' ', '-')}"
     repo.git.checkout(branch, b=True)
+    print(f"created branch {branch}")
 
 
 @app.command()
@@ -68,4 +69,4 @@ def complete(target_branch: Annotated[str, typer.Argument()] = "main"):
 
 
 def run_app():
-    app(prog_name="gitflow")
+    app(prog_name="gitfluent")

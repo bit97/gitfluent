@@ -1,6 +1,6 @@
 import pytest
 
-import gitflow
+import gitfluent
 
 
 @pytest.fixture

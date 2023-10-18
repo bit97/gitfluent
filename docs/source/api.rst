@@ -1,7 +1,7 @@
 API
 ===
 
-.. automodule:: gitflow
+.. automodule:: gitfluent
    :members:
    :undoc-members:
    :show-inheritance:

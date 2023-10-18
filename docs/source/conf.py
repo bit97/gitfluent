@@ -16,14 +16,14 @@ import git
 sys.path.insert(0, str(Path("../..").absolute()))
 
 
-from gitflow import __version__
+from gitfluent import __version__
 
 git_repo = git.Repo(".", search_parent_directories=True)  # type: ignore[reportPrivateImportUsage]
 git_commit = git_repo.head.commit
 
 # -- Project information -----------------------------------------------------
 
-project = "gitflow"
+project = "gitfluent"
 copyright = f"{date.today().year}, Federico Bitondo"
 author = "Federico Bitondo"
 
@@ -124,7 +124,7 @@ def linkcode_resolve(domain, info):
     if file is None:
         return None
     file = Path(file).resolve().relative_to(git_repo.working_dir)
-    if file.parts[0] != "gitflow":
+    if file.parts[0] != "gitfluent":
         # e.g. object is a typing.NewType
         return None
     start, end = lines[1], lines[1] + len(lines[0]) - 1

@@ -8,7 +8,7 @@ vcs = "git"
 style = "semver"
 
 [tool.poetry]
-name = "gitflow"
+name = "gitfluent"
 version = "0.0.0"  # Do not change, let poetry-dynamic-versioning handle it.
 homepage = "https://github.com/bit97/git-feature"
 repository = "https://github.com/bit97/git-feature"
@@ -16,14 +16,14 @@ license = "Apache-2.0"
 description = ""
 authors = ["Federico Bitondo"]
 readme = "README.rst"
-packages = [{include = "gitflow"}]
-include = ["gitflow/*.so", "gitflow/*.pyd"]  # Compiled extensions
+packages = [{include = "gitfluent"}]
+include = ["gitfluent/*.so", "gitfluent/*.pyd"]  # Compiled extensions
 
 [tool.poetry.build]
 generate-setup-file = false
 
 [tool.poetry.scripts]
-gitflow = "gitflow.cli.main:run_app"
+gitfluent = "gitfluent.cli.main:run_app"
 
 [tool.poetry.dependencies]
 # Be as loose as possible if writing a library.
@@ -173,7 +173,7 @@ skip = 'poetry.lock,'
 
 [tool.creosote]
 venvs=[".venv"]
-paths=["gitflow"]
+paths=["gitfluent"]
 deps-file="pyproject.toml"
 sections=["tool.poetry.dependencies"]
 exclude-deps =[

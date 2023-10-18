@@ -7,7 +7,9 @@
 gitfluent
 ==============
 
-gitfluent is a
+gitfluent is a simple library for working with git repositories following the Git Flow branching model.
+It allows to create a new feature or bug branch from the current branch, and to merge it back into the
+main branch after the work is done.
 
 
 Features
@@ -20,15 +22,15 @@ gitfluent requires Python ``>=3.8`` and can be installed via:
 
 .. code-block:: bash
 
-   python -m pip install git+https://github.com/bit97/git-feature.git
+   python -m pip install gitfluent
 
 
 Usage
 =====
 
-.. code-block:: python
+.. code-block:: bash
 
-   import gitfluent
+   python -m gitfluent --help
 
 
 

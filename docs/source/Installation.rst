@@ -12,12 +12,12 @@ To install directly from github, you can run:
 
 .. code-block:: bash
 
-   python -m pip install git+https://github.com/bit97/git-feature.git
+   python -m pip install git+https://github.com/bit97/fluentgit.git
 
 For development, its recommended to use Poetry:
 
 .. code-block:: bash
 
-   git clone https://github.com/bit97/git-feature.git
+   git clone https://github.com/bit97/fluentgit.git
    cd gitfluent
    poetry install

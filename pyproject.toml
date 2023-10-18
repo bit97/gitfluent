@@ -10,8 +10,8 @@ style = "semver"
 [tool.poetry]
 name = "gitfluent"
 version = "0.1.0"  # Do not change, let poetry-dynamic-versioning handle it.
-homepage = "https://github.com/bit97/git-feature"
-repository = "https://github.com/bit97/git-feature"
+homepage = "https://github.com/bit97/fluentgit"
+repository = "https://github.com/bit97/fluentgit"
 license = "Apache-2.0"
 description = ""
 authors = ["Federico Bitondo"]

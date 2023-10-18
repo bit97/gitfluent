@@ -82,7 +82,7 @@ autodoc_default_options = {
 autoclass_content = "init"
 
 # LinkCode
-code_url = f"https://github.com/bit97/git-feature/blob/{git_commit}"
+code_url = f"https://github.com/bit97/fluentgit/blob/{git_commit}"
 
 
 def linkcode_resolve(domain, info):
@@ -169,7 +169,7 @@ html_context = {
     # Github options
     "display_github": True,
     "github_user": "bit97",
-    "github_repo": "git-feature",
+    "github_repo": "fluentgit",
     "github_version": "main",
     "conf_py_path": "/docs/source/",
 }
